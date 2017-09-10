@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.bitsomething</groupId>
   <artifactId>BitSomethingService</artifactId>
@@ -9,7 +11,7 @@
   <url>http://maven.apache.org</url>
   <properties>
       <jdk.version>1.8</jdk.version>
-      <spring.version>4.3.10.RELEASE</spring.version>
+      <spring.version>4.3.8.RELEASE</spring.version>
       <jstl.version>1.2</jstl.version>
       <junit.version>4.11</junit.version>
       <logback.version>1.2.3</logback.version>
@@ -80,10 +82,8 @@
           <artifactId>maven-eclipse-plugin</artifactId>
           <version>2.10</version>
           <configuration>
-                  <!-- Always download and attach dependencies source code -->
               <downloadSources>true</downloadSources>
               <downloadJavadocs>false</downloadJavadocs>
-              <!-- Avoid type mvn eclipse:eclipse -Dwtpversion=2.0 -->
               <wtpversion>2.0</wtpversion>
           </configuration>
         </plugin>
