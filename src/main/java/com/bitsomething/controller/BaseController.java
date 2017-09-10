@@ -16,6 +16,7 @@ public class BaseController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String welcome(ModelMap model) {
+        System.out.println("hey");
 
         model.addAttribute("message", "Welcome");
         model.addAttribute("counter", ++counter);
@@ -28,6 +29,7 @@ public class BaseController {
 
     @RequestMapping(value = "/{name}", method = RequestMethod.GET)
     public String welcomeName(@PathVariable String name, ModelMap model) {
+        System.out.println("yo");
 
         model.addAttribute("message", "Welcome " + name);
         model.addAttribute("counter", ++counter);
