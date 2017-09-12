@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Server port="8005" shutdown="SHUTDOWN">
+
+  <Service name="Catalina">
+  	<Connector
+	    port="8080"
+	    protocol="HTTP/1.1"
+	    proxyPort="443"
+	    scheme="https"
+	    secure="true"
+	    proxyName="bitsomething.com"
+	    connectionTimeout="20000"
+	    URIEncoding="UTF-8"
+	    redirectPort="8443" />
+    <Engine name="Catalina" defaultHost="localhost">
+
+	<Host appBase="webapps" autoDeploy="true" deployXML="false" name="localhost" unpackWARs="true">
+	    <Context docBase="../../BitSomethingService" path="/" reloadable="true" />
+	</Host>
+    </Engine>
+  </Service>
+</Server>
