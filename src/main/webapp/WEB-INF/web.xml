@@ -4,16 +4,6 @@
           http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
     version="2.5">
     
-    <security-constraint>
-		<web-resource-collection>
-			<web-resource-name>Protected Context</web-resource-name>
-			<url-pattern>/*</url-pattern>
-		</web-resource-collection>
-		<!-- auth-constraint goes here if you require authentication -->
-		<user-data-constraint>
-			<transport-guarantee>CONFIDENTIAL</transport-guarantee>
-		</user-data-constraint>
-	</security-constraint>
 
     <display-name>Bit Something Web Application</display-name>
 

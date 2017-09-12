@@ -2,19 +2,13 @@
 <Server port="8005" shutdown="SHUTDOWN">
 
   <Service name="Catalina">
-  	<Valve className="org.apache.catalina.valves.RemoteIpValve"
-		remoteIpHeader="x-forwarded-for"
-		protocolHeader="x-forwarded-proto"
-		protocolHeaderHttpsValue="https" />
-		
   	<Connector port="8080" protocol="HTTP/1.1"
-		connectionTimeout="20000"
-		redirectPort="443" />
+		connectionTimeout="20000" />
 		
     <Engine name="Catalina" defaultHost="localhost">
 
 		<Host appBase="webapps" autoDeploy="true" deployXML="false" name="localhost" unpackWARs="true">
-		    <Context docBase="../BitSomethingService" path="/" reloadable="true" />
+		    <Context docBase="../../BitSomethingService" path="/" reloadable="true" />
 		</Host>
     </Engine>
   </Service>
