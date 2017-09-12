@@ -28,10 +28,10 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav text-md-center nav-justified w-100">
               <li class="nav-item active">
-                <a class="nav-link" href="/BitSomethingService">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/BitSomethingService/projects">Projects</a>
+                <a class="nav-link" href="/projects">Projects</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Photos</a>
@@ -62,7 +62,7 @@
           <h2>Projects</h2>
           <p>This site will host a lot of our projects. It could provide a download link for you to use on your phone, or the app could be used directly in the browser!
           </p>
-          <p><a class="btn btn-primary" href="/BitSomethingService/projects" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-primary" href="/projects" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-lg-4">
           <h2>Cloud Storage</h2>

@@ -1,5 +1,0 @@
-<rule match-type="regex">
-<condition type="header" operator="notequal" name="X-Forwarded-Proto">^HTTPS$</condition>
-<from>^.*$</from>
-<to type="permanent-redirect" last="true">https://%{server-name}%{request-uri}</to>
-</rule>
